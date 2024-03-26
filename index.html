@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--ANIMATE MIN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--ROBOTO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>SOHO - Coworking</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mx-5 wow animate__animated animate__fadeInDown">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logotipo_soho_lalaguna_horizontal_color.png"
+                    alt="Logo" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Espacios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Oficinas</a></li>
+                            <li><a class="dropdown-item" href="#">Sala de reuniones</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Otros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tarifas">Tarifas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li>
+                        <div class="container d-flex mt-2">
+                            <a href="https://www.instagram.com/soholalaguna.es/"><i
+                                    class="bi bi-instagram mx-2"></i></a><a
+                                href="https://www.linkedin.com/company/soho-la-laguna/about/"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </div>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!--HERO-DESTACADO-->
+    <div class="px-4 py-5 my-5 text-center wow animate__animated animate__fadeInUp" id="hero">
+        <img class="d-block mx-auto" src="images/logotipo_soho_simple_negro-300x300.png" alt="Logo">
+        <h1 class="display-5 fw-bold text-body-emphasis">SOHO</h1>
+        <h3 class="display-7 fw-bold text-body-emphasis">Coworking en La Laguna</h3>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Un espacio de trabajo exclusivo creado para el confort de personas emprendedoras,
+                profesionales y empresas en una ubicación inmejorable en el casco histórico de La Laguna, a escasos
+                metros de la Catedral.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-warning btn-lg px-4 gap-3">Nuestros espacios</button>
+                <button type="button" class="btn btn-outline-dark btn-lg px-4">Contáctanos</button>
+            </div>
+        </div>
+    </div>
+    <!--CARRUSEL-->
+    <div class="carousel wow animate__animated animate__fadeInUp">
+        <div class="slides">
+            <img src="images/carrusel/pexels-photo-380769.webp" alt="slide image" class="slide">
+            <img src="images/carrusel/pexels-photo-263209.webp" alt="slide image" class="slide">
+            <img src="images/carrusel/pexels-photo-380768.webp" alt="slide image" class="slide">
+        </div>
+        <div class="controls">
+            <div class="control prev-slide">&#9668;</div>
+            <div class="control next-slide">&#9658;</div>
+        </div>
+    </div>
+    <!--FEATURES-->
+    <div class="container px-4 py-5 wow animate__animated animate__fadeInUp" id="featured-3">
+        <h2 class="pb-2 border-bottom">¿Qué ofrecemos?</h2>
+        <h5 class="pb-2"><span class="underline">Todas</span> nuestras tarifas incluyen:</h5>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h3 class="fs-5 text-body-emphasis">Suministros, servicio de limpieza y seguro.</h3>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                    <i class="bi bi-printer"></i>
+                </div>
+                <h3 class="fs-5 text-body-emphasis">Servicio de impresión y fotocopias según tarifas vigentes.</h3>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                    <i class="bi bi-brightness-high"></i>
+                </div>
+                <h3 class="fs-5 text-body-emphasis">Luz y ventilación natural.</h3>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                    <i class="bi bi-cup-hot"></i>
+                </div>
+                <h3 class="fs-5 text-body-emphasis">Agua, café y té.</h3>
+            </div>
+        </div>
+    </div>
+    <!--CARDS-->
+    <div class="container wow animate__animated animate__fadeInUp" id="tarifas">
+        <h2 class="pb-2">Nuestras tarifas</h2>
+        <div class="row row-cols-1 row-cols-lg-4">
+            <div class="col">
+                <div class="card" style="width: 18rem; height: auto;">
+                    <div class="card-body">
+                        <h3>180€<span class="small">/mes</span></h3>
+                        <h6 class="small">IGIC no incluido</h6>
+                        <h5 class="card-title">Puesto fijo - Básico</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Acceso con llave inteligente de 8 a 20 horas de lunes a viernes.</li>
+                            <li>Escritorio ajustable de pie/sentado y silla ergonómica.</li>
+                            <li>Conexión por cable Ethernet y Wifi | Fibra Óptica 600Mb.</li>
+                            <li>Recepción de mensajería y visitas | Domiciliación fiscal.</li>
+                            <li>Uso ilimitado de zonas comunes.</li>
+                            <li>Uso de sala de reuniones 6 horas al mes.</li>
+                            <li>Aparcamiento para bicicletas.</li>
+                        </ul>
+                        </p>
+                        <a href="#" class="btn btn-warning">+ Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem; height: auto;">
+                    <div class="card-body">
+                        <h3>200€<span class="small">/mes</span></h3>
+                        <h6 class="small">IGIC no incluido</h6>
+                        <h5 class="card-title">Puesto fijo - Premium</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Acceso 24/7 con llave inteligente.</li>
+                            <li>Escritorio ajustable de pie/sentado y silla ergonómica.</li>
+                            <li>Cajonera con llave.</li>
+                            <li>Conexión por cable Ethernet y Wifi | Fibra Óptica 600Mb.</li>
+                            <li>Recepción de mensajería y visitas | Domiciliación fiscal.</li>
+                            <li>Uso ilimitado de zonas comunes.</li>
+                            <li>Uso de sala de reuniones 10 horas al mes.</li>
+                            <li>Aparcamiento para bicicletas.</li>
+                        </ul>
+                        </p>
+                        <a href="#" class="btn btn-warning">+ Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem; height: auto;">
+                    <div class="card-body">
+                        <h3>75€<span class="small">/semana</span></h3>
+                        <h6 class="small">IGIC no incluido</h6>
+                        <h5 class="card-title">Pase semanal</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Acceso de 9 a 18 horas de lunes a viernes.</li>
+                            <li>Mesa compartida.</li>
+                            <li>Conexión por cable Ethernet y Wifi | Fibra Óptica 600Mb.</li>
+                            <li>Uso de Cocina – Office | Zona de descanso | Terraza.</li>
+                        </ul>
+                        </p>
+                        <a href="#" class="btn btn-warning">+ Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem; height: auto;">
+                    <div class="card-body">
+                        <h3>25€<span class="small">/hora</span></h3>
+                        <h6 class="small">IGIC no incluido</h6>
+                        <h5 class="card-title">Aula polivalente</h5>
+                        <h6>Formaciones, talleres y presentaciones</h6>
+                        <p class="card-text">
+                        <ul>
+                            <li>Capacidad para 20 personas.</li>
+                            <li>Pizarra y proyector HD.</li>
+                        </ul>
+                        </p>
+                        <a href="#" class="btn btn-warning">+ Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 wow animate__animated animate__fadeInUp" id="contacto">
+            <h2 class="pb-2">¿Cómo contactarnos?</h2>
+            <div class="row row-cols-1" id="horario">
+                <div class="col">
+                    <div class="card text-center mb-3" style="width: 100%;">
+                        <div class="card-body">
+                            <i class="bi bi-clock"></i>
+                            <h5 class="card-title">Horario</h5>
+                            <p class="card-text">Lunes a Viernes
+                                <br>de 9:00h. a 14:00h.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 mx-5">
+                <div class="col">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-telephone"></i>
+                            <h5 class="card-title">Teléfono</h5>
+                            <p class="card-text">679 128 786</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-envelope"></i>
+                            <h5 class="card-title">E-Mail</h5>
+                            <p class="card-text">hello@soholalaguna.es</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Redes Sociales</h5>
+                            <a href="https://www.instagram.com/soholalaguna.es/"><i
+                                    class="bi bi-instagram mx-2"></i></a><a
+                                href="https://www.linkedin.com/company/soho-la-laguna/about/"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.718269066448!2d-16.31765!3d28.488030000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cde564ad438d%3A0x7cf372f6400bcdcf!2sSoho%20La%20Laguna!5e0!3m2!1ses!2ses!4v1711457879901!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mt-3"></iframe>
+        </div>
+        <hr class="my-5">
+        <!--FOOTER-->
+        <div class="container wow animate__animated animate__fadeInUp">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Espacios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Aviso Legal</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2024 SOHO. Todos los derechos reservados.</p>
+            </footer>
+        </div>
+        <!--BOOTSTRAP SCRIPT-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!--CARRUSEL SCRIPT-->
+        <script>
+            const delay = 3000; //ms
+
+            const slides = document.querySelector(".slides");
+            const slidesCount = slides.childElementCount;
+            const maxLeft = (slidesCount - 1) * 100 * -1;
+
+            let current = 0;
+
+            function changeSlide(next = true) {
+                if (next) {
+                    current += current > maxLeft ? -100 : current * -1;
+                } else {
+                    current = current < 0 ? current + 100 : maxLeft;
+                }
+
+                slides.style.left = current + "%";
+            }
+
+            let autoChange = setInterval(changeSlide, delay);
+            const restart = function () {
+                clearInterval(autoChange);
+                autoChange = setInterval(changeSlide, delay);
+            };
+
+            // Controls
+            document.querySelector(".next-slide").addEventListener("click", function () {
+                changeSlide();
+                restart();
+            });
+
+            document.querySelector(".prev-slide").addEventListener("click", function () {
+                changeSlide(false);
+                restart();
+            });
+
+        </script>
+        <!--WOW JS-->
+        <script src="
+    https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
+    "></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+</html>

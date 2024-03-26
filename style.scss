@@ -1,0 +1,167 @@
+/*COLORES*/
+$main-color: #ccbe00;
+$sec-color: #9e9400;
+$thr-color: #5a5600;
+$dark: #000;
+$light: #fff;
+
+/*CARRUSEL*/
+$carousel-height: 150px;
+$control-size: 50px;
+
+* {
+    font-family: "Roboto Mono", monospace;
+}
+
+#logo {
+    width: 30%;
+    height: auto;
+}
+
+/*SOMBRAS IMGs*/
+.navbar img {
+    transition: 0.5s;
+}
+
+.navbar img:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6));
+}
+
+#hero img {
+    transition: 0.5s;
+}
+
+#hero img:hover {
+    filter: drop-shadow(0px 0px 10px $dark);
+}
+
+/*NAVBAR*/
+li .nav-link {
+    color: $sec-color;
+    transition: 0.5s;
+}
+
+li .nav-link:hover {
+    color: $thr-color;
+}
+
+.dropdown-menu a {
+    transition: 0.5s;
+}
+
+.dropdown-menu a:hover {
+    background-color: $main-color;
+}
+
+.navbar i {
+    transition: 0.5s;
+    color: $dark;
+}
+
+.navbar i:hover {
+    color: $main-color;
+}
+
+/*CARRUSEL*/
+.carousel {
+    background: $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    height: $carousel-height;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+    &:hover .controls {
+        opacity: 1;
+    }
+
+    .controls {
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 99999;
+        transition: all ease 0.5s;
+
+        .control {
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            opacity: .5;
+            transition: ease .3s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .slides {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        width: 100%;
+        transition: 1s ease-in-out all;
+
+        .slide {
+            min-width: 100%;
+            min-height: $carousel-height;
+            height: auto;
+        }
+    }
+}
+
+/*FEATURES*/
+.feature i {
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.feature i:hover {
+    color: $main-color;
+}
+
+#featured-3 .underline {
+    text-decoration: underline;
+}
+
+/*CARDS*/
+.card h6 {
+    margin-top: -2%;
+    font-size: 0.8em;
+}
+
+.card .small {
+    font-size: 0.5em;
+}
+
+.card ul li {
+    font-size: 0.9em;
+}
+
+/*CONTACTO*/
+#contacto i {
+    font-size: 2em;
+    transition: 0.5s;
+    color: $dark;
+}
+
+#contacto i:hover {
+    color: $main-color;
+}
